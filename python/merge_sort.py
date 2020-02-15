@@ -15,7 +15,7 @@ def merge_sort (array_to_sort) :
 
   while (lhs_iter<len(lhs) and rhs_iter<len(rhs)):
 
-    if(lhs[lhs_iter]<rhs[rhs_iter]):
+    if(lhs[lhs_iter] <= rhs[rhs_iter]):
       output_array[out_iter] = lhs[lhs_iter]
       lhs_iter = lhs_iter+1
     else:
