@@ -22,6 +22,7 @@ def sort_and_count_inversions (array_to_sort) :
       lhs_iter = lhs_iter+1
     else:
       output_array[out_iter] = rhs[rhs_iter]
+      # key idea is here
       split_inversions += (len(lhs) - lhs_iter)
       rhs_iter = rhs_iter+1
     
